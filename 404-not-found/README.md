@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://battian.github.io/404-not-found/">
+    <a href="https://devchallenges-responsive.netlify.app/404-not-found/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/battian/404-not-found">
+    <a href="https://github.com/battian/devchallenges-responsive/tree/main/404-not-found">
       Solution
     </a>
     <span> | </span>
@@ -19,11 +19,6 @@
     </a>
   </h3>
 </div>
-
-## Table of Contents
-
-- [Built With](#built-with)
-- [Features](#features)
 
 ### Built With
 
