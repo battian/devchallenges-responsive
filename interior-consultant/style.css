@@ -1,0 +1,274 @@
+/*
+font-family: 'Crimson Pro', serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181719;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > h1 {
+  font-family: 'Crimson Pro', serif;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 8px;
+  border: 1px solid #ffffff;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li + li {
+  margin-left: 80px;
+}
+
+.navbar__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 8px;
+}
+
+.navbar__link.active {
+  font-weight: 700;
+}
+
+/* mobile nav styling */
+.navbar__mobile {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #181719;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.showNav {
+  transform: translateY(0);
+}
+
+.navbar__mobile ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__mobile ul li + li {
+  margin-top: 32px;
+}
+
+.nav__toggle {
+  z-index: 1;
+  display: none;
+  padding: 4px;
+  color: #fff;
+}
+
+.material-icons.nav-btn {
+  font-size: 36px;
+}
+
+main {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.main__content h1 {
+  font-family: 'Lora', serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.main__content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28px;
+  max-width: 60%;
+}
+
+.main__container-rm {
+  display: flex;
+  align-items: center;
+  margin: 48px 0;
+}
+
+.main__container-rm a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.main__design-imgWrapper {
+  max-width: 600px;
+}
+
+.main__design-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main__designer-card {
+  padding: 24px;
+  background: #181719;
+  max-width: 60%;
+  transform: translate(1rem, -4rem);
+}
+
+.main__designer {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.main__designer-icon {
+  border-radius: 50%;
+  width: 60px;
+  margin-right: 12px;
+}
+
+.main__designer-name {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.main__designer-desc {
+  font-size: 12px;
+  color: #828282;
+}
+
+.main__designer-text {
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 270px;
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+@media only screen and (max-width: 950px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .main__designer-card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .main__designer-icon {
+    width: 40px;
+  }
+
+  .main__designer-name {
+    font-size: 12px;
+  }
+
+  .main__designer-desc {
+    font-size: 10px;
+  }
+
+  .main__designer-text {
+    font-size: 18px;
+  }
+
+  footer p:before {
+    content: '';
+    display: block;
+    background: #a9a9a9;
+    height: 1px;
+    width: 260px;
+    margin: 0 auto 10px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .main__content > h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .main__content > p {
+    font-size: 14px;
+  }
+
+  .main__designer-card {
+    max-width: 80%;
+  }
+}
