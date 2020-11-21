@@ -1,0 +1,271 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100vh;
+  width: 90%;
+  max-width: 970px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type='checkbox'] {
+  transform: scale(1.6);
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 24px;
+  grid-template-areas:
+    'header header'
+    'main aside'
+    'main .';
+}
+
+.material-icons {
+  font-size: 32px;
+}
+
+.orange {
+  color: #f2994a;
+}
+
+.recipe__header {
+  grid-area: header;
+  margin: 48px 0;
+}
+
+.recipe__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #000;
+}
+
+.recipe__description {
+  display: flex;
+  margin: 8px 0 32px;
+  font-size: 14px;
+}
+
+.recipe__description img {
+  align-self: flex-start;
+  padding: 8px 16px 8px 0;
+}
+
+.recipe__description p {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  color: #4f4f4f;
+  max-width: 590px;
+}
+
+.recipe__info {
+  grid-area: aside;
+  padding: 48px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.recipe__info div + div {
+  margin-top: 40px;
+}
+
+.recipe__details {
+  display: flex;
+  align-items: center;
+}
+
+.recipe__details > div {
+  margin-left: 16px;
+}
+
+.recipe__details-title {
+  color: #bdbdbd;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.recipe__details-instruction {
+  font-size: 14px;
+  color: #333333;
+  margin-top: 4px;
+}
+
+main {
+  grid-area: main;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.recipe__ingredients {
+  margin: 32px 0;
+}
+
+.recipe__ingredients div + div {
+  margin-top: 8px;
+}
+
+.recipe__ingredients h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 32px 0;
+}
+
+.recipe__checkbox {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  display: flex;
+}
+
+.recipe__checkbox p {
+  margin-left: 16px;
+  max-width: 580px;
+}
+
+.recipe__checkbox span {
+  font-style: italic;
+}
+
+input[type='checkbox']:checked + .checkbox__label {
+  color: #bdbdbd;
+}
+
+.recipe__instructions {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 32px 0;
+}
+
+.recipe__instructions div + div {
+  margin-top: 32px;
+}
+
+.recipe__instructions-wrapper {
+  display: flex;
+  align-self: center;
+}
+
+.recipe__instructions-wrapper span {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  border-radius: 6px;
+  background-color: #f2994a;
+  height: max-content;
+  padding: 0px 13px 5px;
+  color: #ffffff;
+}
+
+.recipe__instructions-wrapper p {
+  margin-left: 16px;
+}
+
+.recipe__source {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  color: #bdbdbd;
+  margin: 72px 0;
+}
+
+footer {
+  color: #a9a9a9;
+  font-weight: 14px;
+  text-align: center;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 640px) {
+  #container {
+    display: block;
+  }
+
+  input[type='checkbox'] {
+    transform: scale(1.2);
+  }
+
+  .recipe__header {
+    margin: 32px 0;
+  }
+
+  .recipe__title {
+    font-size: 32px;
+  }
+
+  .recipe__info {
+    margin-bottom: 48px;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .recipe__info div + div {
+    margin-top: 0;
+  }
+
+  .recipe__details-wrapper {
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .material-icons {
+    font-size: 24px;
+  }
+
+  .recipe__title {
+    font-size: 24px;
+  }
+
+  .recipe__details {
+    display: flex;
+    align-items: center;
+  }
+
+  .recipe__details > div {
+    margin-left: 8px;
+  }
+
+  .recipe__details-title {
+    font-size: 8px;
+  }
+
+  .recipe__details-instruction {
+    font-size: 10px;
+    margin-top: 0;
+  }
+}
