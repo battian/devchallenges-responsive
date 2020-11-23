@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+    <link rel="icon" href="./images/devchallenges.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Checkout Page | Devchallenges</title>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="title">Checkout</h1>
+    <div id="container">
+      <section class="form__container">
+        <form>
+          <h3>Contact infomation</h3>
+
+          <div class="input__group">
+            <label for="email">E-mail</label>
+            <div class="input__container">
+              <i class="material-icons">email</i>
+              <input required type="email" placeholder="Enter your email" id="email" />
+            </div>
+            <span class="error"></span>
+          </div>
+
+          <div class="input__group">
+            <label for="phone">Phone</label>
+            <div class="input__container">
+              <i class="material-icons">phone</i>
+              <input required type="text" placeholder="Enter your phone" id="phone" />
+            </div>
+            <span class="error"></span>
+          </div>
+
+          <h3>Shipping address</h3>
+
+          <div class="input__group">
+            <label for="fname">Full Name</label>
+            <div class="input__container">
+              <i class="material-icons">account_circle</i>
+              <input required type="text" id="fname" />
+            </div>
+            <span class="error"></span>
+          </div>
+
+          <div class="input__group">
+            <label for="address">Address</label>
+            <div class="input__container">
+              <i class="material-icons">home</i>
+              <input required type="text" id="address" placeholder="Your address" />
+            </div>
+            <span class="error"></span>
+          </div>
+
+          <div class="input__group">
+            <label for="city">City</label>
+            <div class="input__container">
+              <i class="material-icons">apartment</i>
+              <input required type="text" id="city" placeholder="Your city" />
+            </div>
+            <span class="error"></span>
+          </div>
+
+          <div class="input__wrapper">
+            <div class="input__group">
+              <label for="country">Country</label>
+              <div class="input__container">
+                <i class="material-icons">public</i>
+                <select id="country">
+                  <option value="usa">USA</option>
+                  <option value="canada">Canada</option>
+                  <option value="uk">UK</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input__group">
+              <label for="postal">Postal code</label>
+              <div class="input__container">
+                <i class="material-icons">markunread_mailbox</i>
+                <input
+                  required
+                  type="text"
+                  id="postal"
+                  placeholder="Your postal code.."
+                />
+              </div>
+              <span class="error"></span>
+            </div>
+          </div>
+
+          <div class="input__group checkbox">
+            <input type="checkbox" id="checkbox" />
+            <label required for="city">Save this information for next time</label>
+          </div>
+
+          <button type="submit" class="form__btn">Continue</button>
+        </form>
+      </section>
+
+      <section class="cart">
+        <div class="cart__product">
+          <div class="product__image">
+            <img src="./images/photo1.png" alt="photo" />
+          </div>
+
+          <div class="product__details">
+            <h3 class="product__name">Vintage Backbag</h3>
+            <p class="product__price">$ 54.99 <span>$ 94.99</span></p>
+
+            <div class="product__quantity">
+              <button>
+                <i class="material-icons">remove</i>
+              </button>
+              <span>1</span>
+              <button>
+                <i class="material-icons">add</i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__product">
+          <div class="product__image">
+            <img src="./images/photo2.png" alt="photo" />
+          </div>
+
+          <div class="product__details">
+            <h3 class="product__name">Levi Shoes</h3>
+            <p class="product__price">$ 74.99 <span>$ 124.99</span></p>
+
+            <div class="product__quantity">
+              <button>
+                <i class="material-icons">remove</i>
+              </button>
+              <span>1</span>
+              <button>
+                <i class="material-icons">add</i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__total">
+          <div>
+            <p>Shipping</p>
+            <span>$ 19</span>
+          </div>
+          <div>
+            <p>Total</p>
+            <span>$ 148.98</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer><p>battian @ DevChallenges.io</p></footer>
+  </body>
+</html>
