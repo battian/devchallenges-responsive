@@ -1,0 +1,74 @@
+.contact {
+  background-color: $dark-blue;
+
+  &__wrapper {
+    width: 90%;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4.8rem 0;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    margin-bottom: 0.8rem;
+    color: $light;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__socials {
+    color: $light;
+    font-family: $heebo;
+
+    div {
+      margin-top: 0.8rem;
+      cursor: pointer;
+    }
+
+    div i {
+      font-size: 2.4rem;
+      margin-right: 0.4rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $gray4;
+      }
+    }
+  }
+
+  .hero__contact p {
+    color: $light;
+  }
+
+  .devchallenges {
+    text-align: center;
+    color: #a9a9a9;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 3.2rem 1.6rem;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .contact__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 6.4rem;
+    column-gap: 0;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobileL) {
+  .contact__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

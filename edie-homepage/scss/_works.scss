@@ -1,0 +1,91 @@
+.works {
+  margin: 8rem auto;
+
+  & > h2 {
+    margin-bottom: 4rem;
+  }
+
+  & p {
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+    font-weight: 300;
+  }
+
+  &__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    grid-template-areas:
+      'one two'
+      'one .'
+      'three four'
+      'three .';
+  }
+
+  &__card {
+    max-width: 575px;
+    margin: 0;
+  }
+
+  & .card-one {
+    grid-area: one;
+    margin-top: 10rem;
+  }
+
+  & .card-two {
+    grid-area: two;
+  }
+
+  & .card-three {
+    grid-area: three;
+    margin-top: 10rem;
+  }
+
+  & .card-four {
+    grid-area: four;
+  }
+
+  &__card-wrapper > img {
+    width: 100%;
+    border-radius: 1.2rem;
+  }
+
+  &__more {
+    margin: 0;
+    cursor: pointer;
+    grid-row: 4 / 5;
+    justify-self: flex-end;
+
+    color: $blue;
+    display: flex;
+    align-items: center;
+
+    & a {
+      color: $blue;
+      margin-right: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobileL) {
+  .works {
+    & p {
+      font-size: 1.2rem;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__card {
+      margin-top: 1.6rem;
+    }
+
+    & .card-one,
+    .card-three {
+      margin-top: 0;
+    }
+  }
+}

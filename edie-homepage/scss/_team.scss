@@ -1,0 +1,82 @@
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: 8rem auto;
+
+  &__about {
+    width: 288px;
+  }
+
+  &__meet {
+    color: $red;
+    margin-bottom: 2.4rem;
+  }
+
+  &__desc {
+    color: $gray3;
+    font-size: 1.6rem;
+  }
+
+  &__wrapper {
+    max-width: 500px;
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+    grid-template-areas:
+      'one two'
+      'one three';
+
+    img {
+      width: 100%;
+      border-radius: 2.5rem;
+    }
+
+    .img-one {
+      grid-area: one;
+      place-self: center;
+    }
+
+    .img-two {
+      grid-area: two;
+      margin-bottom: 1.6rem;
+      max-width: 200px;
+    }
+
+    .img-three {
+      grid-area: three;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .team__wrapper {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .team {
+    .team__wrapper {
+      max-width: 250px;
+      gap: 1.6rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .team {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    .team__wrapper {
+      align-self: center;
+      max-width: 350px;
+      gap: 1.6rem;
+    }
+  }
+}

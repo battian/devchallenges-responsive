@@ -1,0 +1,70 @@
+.blue {
+  background-color: $blue;
+  color: $light;
+}
+
+.green {
+  background-color: $green;
+  color: $light;
+}
+
+.red {
+  background-color: $red;
+  color: $light;
+}
+
+.services {
+  margin-bottom: 12rem;
+
+  & > h2 {
+    margin-bottom: 4rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.4rem;
+  }
+
+  &__card {
+    max-width: 340px;
+    padding: 4.8rem 3.2rem;
+    border-radius: 2.4rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    }
+  }
+
+  & .card__icon {
+    width: 67px;
+    height: 67px;
+    border-radius: 1.6rem;
+    font-size: 3.2rem;
+    padding: 1.8rem;
+  }
+
+  & .card__title {
+    font-size: 2.4rem;
+    margin: 3.2rem 0 2.4rem;
+  }
+
+  & .card__desc {
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobileL) {
+  .services {
+    & > h2 {
+      margin-bottom: 3.2rem;
+    }
+
+    &__cards {
+      gap: 1.6rem;
+    }
+  }
+}

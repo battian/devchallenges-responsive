@@ -1,0 +1,96 @@
+:root {
+  font-size: 60%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100vh;
+  font-family: $poppins;
+  font-size: 1.6rem;
+  color: $dark;
+  background-color: $light;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 8rem auto;
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  background: $gray5;
+  border-radius: 1.2rem;
+  color: $gray3;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $blue;
+    color: $light;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  h1,
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobileL) {
+  .container {
+    margin: 4rem auto;
+    width: 85%;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}

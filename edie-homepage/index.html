@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+    <link rel="icon" href="./images/devchallenges.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Edie Homepage | Devchallenges</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="header">
+        <h1 class="header__logo">Edie</h1>
+
+        <button class="header__toggle" id="header-toggle">
+          <i class="bx bx-menu"></i>
+        </button>
+
+        <nav class="nav">
+          <a href="#hero" class="nav__link">Home</a>
+          <a href="#services" class="nav__link">Services</a>
+          <a href="#works" class="nav__link">Our Works </a>
+          <a href="#clients" class="nav__link">Clients</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="hero">
+          <div class="hero__top container">
+            <p>Unhappy with your website?</p>
+            <h1>We create beautiful <br />and fast web services</h1>
+          </div>
+
+          <img src="./images/heroImage.jpg" alt="Edie" class="hero__img" />
+
+          <div class="hero__bottom container">
+            <h1>Story, emotion <br />and purpose</h1>
+
+            <p>
+              We help transform your ideas into real world applications that will
+              outperform your toughest competition and help you achieve your strategic
+              goals in short period of time.
+            </p>
+
+            <div class="hero__contact">
+              <label class="hero__contact-info">Want us to contact you?</label>
+              <div class="input__container">
+                <input type="text" placeholder="Email" />
+                <button class="btn blue">Join</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="services container" id="services">
+          <h2>We offer high <br />demand services</h2>
+
+          <div class="services__cards">
+            <div class="services__card">
+              <i class="bx bxs-pencil card__icon blue"></i>
+              <h3 class="card__title">UI/UX Design</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac
+                nulla consequat aliquet id quis turpis.
+              </p>
+              <button class="btn">Get started</button>
+            </div>
+
+            <div class="services__card">
+              <i class="bx bx-code card__icon green"></i>
+              <h3 class="card__title">Front End</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac
+                nulla consequat aliquet id quis turpis.
+              </p>
+              <button class="btn">Get started</button>
+            </div>
+
+            <div class="services__card">
+              <i class="bx bx-list-ul card__icon red"></i>
+              <h3 class="card__title">Back End</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac
+                nulla consequat aliquet id quis turpis.
+              </p>
+              <button class="btn">Get started</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="works container" id="works">
+          <h2>
+            Good design means <br />
+            good business
+          </h2>
+
+          <section class="works__cards">
+            <div class="works__card card-one">
+              <div class="works__card-wrapper">
+                <img
+                  src="./images/smarthome.jpg"
+                  alt="smarthome"
+                  class="works__card-img"
+                />
+              </div>
+              <p>Full stack application</p>
+              <h3>Smart home dashboard</h3>
+            </div>
+
+            <div class="works__card card-two">
+              <div class="works__card-wrapper">
+                <img src="./images/onboard.png" alt="onboard" class="works__card-img" />
+              </div>
+              <p>UX/UI design</p>
+              <h3>Onboard application</h3>
+            </div>
+
+            <div class="works__card card-three">
+              <div class="works__card-wrapper">
+                <img src="./images/booking.png" alt="booking" class="works__card-img" />
+              </div>
+              <p>Mobile application</p>
+              <h3>Booking system</h3>
+            </div>
+
+            <div class="works__card card-four">
+              <div class="works__card-wrapper">
+                <img
+                  src="./images/juice-product.png"
+                  alt="juice product"
+                  class="works__card-img"
+                />
+              </div>
+              <p>Front End application</p>
+              <h3>Juice product homepage</h3>
+            </div>
+
+            <div class="works__more">
+              <a href="#">See more </a>
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </section>
+        </section>
+
+        <section class="team container" id="team">
+          <div class="team__about">
+            <p class="team__meet">Meet the team</p>
+            <h2 class="team__title">We are chilled and a laidback team</h2>
+            <p class="team__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+
+          <div class="team__wrapper">
+            <img src="./images/person3.png" alt="team" class="img-one" />
+
+            <div>
+              <img src="./images/person1.png" alt="team" class="img-two" />
+              <img src="./images/person2.png" alt="team" class="img-three" />
+            </div>
+          </div>
+        </section>
+
+        <section class="clients container" id="clients">
+          <h2>
+            “Fast and outstanding resutls. Edie understands their customer’s needs. They
+            have a young and talented team.”
+          </h2>
+
+          <div class="client">
+            <img src="./images/person4.png" alt="client" />
+            <div class="client__info">
+              <p class="client__name">Carlos Tran</p>
+              <p class="client__desc">The Decorate Gatsby</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="contact" id="contact">
+      <div class="contact__wrapper container">
+        <nav class="contact__nav">
+          <a href="#hero" class="contact__link">Home</a>
+          <a href="#services" class="contact__link">Services</a>
+          <a href="#works" class="contact__link">Our Works </a>
+          <a href="#clients" class="contact__link">Clients</a>
+          <a href="#contact" class="contact__link">Contact</a>
+        </nav>
+
+        <div class="contact__socials">
+          <h2>Edie</h2>
+          <div>
+            <i class="bx bxl-instagram-alt"></i>
+            <i class="bx bxl-linkedin-square"></i>
+            <i class="bx bxl-twitter"></i>
+          </div>
+        </div>
+
+        <div class="hero__contact">
+          <label class="hero__contact-info">Want us to contact you?</label>
+          <div class="input__container">
+            <input type="text" placeholder="Email" />
+            <button class="btn blue">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="devchallenges">battian @ DevChallenges.io</p>
+    </footer>
+
+    <script>
+      const btn = document.querySelector('.header__toggle');
+      const nav = document.querySelector('.nav');
+
+      btn.addEventListener('click', () => {
+        nav.classList.toggle('nav__show');
+      });
+    </script>
+  </body>
+</html>
